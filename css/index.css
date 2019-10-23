@@ -143,6 +143,7 @@ table {
 html {
   height: 100%;
   width: 100%;
+  /* font-size: 62.45%; */
   font-size: 40%;
   font-family: 'Baloo Bhai', cursive;
 }
@@ -166,8 +167,12 @@ html .container p {
 }
 html .container nav.top-nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  /*   &.hover{
+                border-bottom: 2px solid @accent;
+
+            } */
 }
 html .container nav.top-nav a {
   color: #9cb2bc;
@@ -183,7 +188,6 @@ html .container nav.top-nav a p:hover {
   html .container nav.top-nav {
     font-size: 80%;
     justify-content: center;
-    margin-left: -20%;
   }
   html .container nav.top-nav a {
     width: 50px;
