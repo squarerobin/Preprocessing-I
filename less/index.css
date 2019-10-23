@@ -144,6 +144,7 @@ html {
   height: 100%;
   width: 100%;
   font-size: 40%;
+  font-family: 'Baloo Bhai', cursive;
 }
 html h1 {
   font-size: 5em;
@@ -286,10 +287,14 @@ html .container .bottom ul li {
   margin-bottom: 3em;
 }
 html .container .form {
-  margin-bottom: 10%;
+  margin-bottom: 30%;
   max-width: 600px;
   min-width: 300px;
   width: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
 }
 html .container .form p {
   font-size: 2em;
@@ -302,7 +307,7 @@ html .container .form #form {
   height: 100%;
 }
 html .container .form form {
-  margin: 0 auto;
+  margin: 0 0%;
   width: 30%;
   padding-top: 40px;
   color: #9cb2bc;
