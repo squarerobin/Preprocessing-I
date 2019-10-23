@@ -172,11 +172,11 @@ html .container nav.top-nav {
 html .container nav.top-nav a {
   color: #9cb2bc;
   text-decoration: none;
-  padding-right: 20em;
+  padding-right: 16rem;
   width: 50px;
   height: 50px;
 }
-html .container nav.top-nav a > p:hover {
+html .container nav.top-nav a p:hover {
   border-bottom: 2px solid #c5821e;
 }
 @media (max-width: 500px) {
@@ -186,7 +186,7 @@ html .container nav.top-nav a > p:hover {
     margin-left: -20%;
   }
   html .container nav.top-nav a {
-    widthows: 50px;
+    width: 50px;
     height: 50px;
     padding: 50px;
   }
