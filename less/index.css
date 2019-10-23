@@ -133,6 +133,9 @@ table {
   flex-wrap: nowrap;
   justify-content: center;
 }
+.darken {
+  background-color: #b36b00;
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -140,6 +143,7 @@ table {
 html,
 body {
   height: 100%;
+  width: 100%;
   font-size: 62.45%;
 }
 html h1,
@@ -176,13 +180,13 @@ html .container nav.top-nav a,
 body .container nav.top-nav a {
   color: #9cb2bc;
   text-decoration: none;
-  margin-right: 4rem;
+  margin-right: 10em;
   width: 50px;
   height: 50px;
 }
 html .container nav.top-nav a:hover,
 body .container nav.top-nav a:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid #f90;
 }
 @media (max-width: 500px) {
   html .container nav.top-nav,
@@ -206,28 +210,45 @@ body .container .featured > * {
 }
 html .container .featured img,
 body .container .featured img {
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 2%;
-  width: 20%;
-  border-radius: 20%;
+  width: 40%;
+  max-width: 300px;
+  min-width: 300px;
+  border-radius: 50%;
 }
-html .container .featured input[type],
-body .container .featured input[type] {
-  max-width: 20em;
+html .container .featured p,
+body .container .featured p {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  html .container .featured p,
+  body .container .featured p {
+    width: 100%;
+  }
 }
 html .container .featured button,
 body .container .featured button {
   font-size: 1em;
-  background: #1ea1b8;
+  background: #f90;
   padding: 1em;
   height: 40%;
   /* border-radius: 20%; */
+}
+html .container .featured button p,
+body .container .featured button p {
+  width: 100%;
+  color: black;
+}
+html .container .featured button:hover,
+body .container .featured button:hover {
+  background-color: #b36b00;
 }
 html .container .middle,
 body .container .middle {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 10%;
   width: 100%;
 }
@@ -235,24 +256,29 @@ html .container .middle .listen-up,
 body .container .middle .listen-up {
   flex: 1;
   width: 40%;
-  margin-right: 6%;
+  margin-right: 20%;
 }
 html .container .middle .listen-up h1,
 body .container .middle .listen-up h1 {
-  padding-bottom: 2em;
-}
-html .container .middle .good-at,
-body .container .middle .good-at {
-  flex: 1;
-  width: 40%;
-}
-html .container .middle .good-at h1,
-body .container .middle .good-at h1 {
-  padding-bottom: 2em;
-}
-html .container .middle .good-at ul li,
-body .container .middle .good-at ul li {
   padding-bottom: 1em;
+}
+html .container .middle .expertise,
+body .container .middle .expertise {
+  flex: 1;
+  line-height: 7em;
+  width: 50%;
+}
+html .container .middle .expertise h1,
+body .container .middle .expertise h1 {
+  margin-bottom: 3%;
+}
+html .container .middle .expertise ul,
+body .container .middle .expertise ul {
+  list-style-type: circle;
+}
+html .container .middle .expertise ul li,
+body .container .middle .expertise ul li {
+  padding-bottom: 0em;
   margin-bottom: 3em;
 }
 @media (max-width: 500px) {
@@ -273,8 +299,8 @@ body .container .middle .good-at ul li {
   body .container .middle .listen-up h1 {
     padding-bottom: 2em;
   }
-  html .container .middle .good-at,
-  body .container .middle .good-at {
+  html .container .middle .expertise,
+  body .container .middle .expertise {
     width: 100%;
     margin-top: 20%;
   }
@@ -297,7 +323,7 @@ html .container .form,
 body .container .form {
   margin-bottom: 10%;
   max-width: 100%;
-  width: 100%;
+  width: 60%;
 }
 html .container .form p,
 body .container .form p {
@@ -307,15 +333,10 @@ html .container .form h1,
 body .container .form h1 {
   margin-bottom: 10%;
 }
-html .container .form #waterform,
-body .container .form #waterform {
-  margin: 0 0;
-}
 html .container .form #form,
 body .container .form #form {
+  margin: 0 0;
   height: 100%;
-  background-color: #98d4f3;
-  overflow: hidden;
 }
 html .container .form form,
 body .container .form form {
@@ -323,17 +344,6 @@ body .container .form form {
   width: 30%;
   padding-top: 40px;
   color: #9cb2bc;
-}
-@media (max-width: 500px) {
-  html .container .form #waterform,
-  body .container .form #waterform {
-    margin: 0 10%;
-  }
-  html .container .form input[type="submit"],
-  body .container .form input[type="submit"] {
-    margin: 0;
-    width: 300%;
-  }
 }
 html .container .form label,
 body .container .form label,
@@ -392,7 +402,7 @@ body .container .form input[type="submit"] {
 }
 html .container .form input[type="submit"]:hover,
 body .container .form input[type="submit"]:hover {
-  background-color: #e58f0e;
+  background-color: #b36b00;
 }
 html .container .form label,
 body .container .form label {
@@ -429,6 +439,21 @@ body .container .form input[value],
 html .container .form input textarea,
 body .container .form input textarea {
   font-size: 3em;
+}
+@media (max-width: 500px) {
+  html .container div.form,
+  body .container div.form {
+    width: 100%;
+  }
+  html .container #waterform,
+  body .container #waterform {
+    margin: 0 10%;
+  }
+  html .container input[type="submit"],
+  body .container input[type="submit"] {
+    margin: 0;
+    width: 300%;
+  }
 }
 html .container footer,
 body .container footer {
