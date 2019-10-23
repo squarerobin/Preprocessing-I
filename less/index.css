@@ -322,8 +322,9 @@ body .container .bottom ul li {
 html .container .form,
 body .container .form {
   margin-bottom: 10%;
-  max-width: 100%;
-  width: 60%;
+  max-width: 600px;
+  min-width: 300px;
+  width: 50%;
 }
 html .container .form p,
 body .container .form p {
@@ -462,4 +463,6 @@ body .container footer {
 html .container footer p,
 body .container footer p {
   text-align: center;
+}
+@media (max-width: 500px) {
 }

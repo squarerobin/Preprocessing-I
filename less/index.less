@@ -183,6 +183,7 @@ body {
         color: @main_font;
         padding: 10em;
 
+	
         a,
         p {
             color: @main_font;
@@ -349,8 +350,9 @@ body {
 
         .form {
             margin-bottom: 10%;
-            max-width: 100%;
-            width: 60%;
+			max-width: 600px;
+			min-width: 300px;
+            width: 50%;
 
             p {
                 font-size: 2em;
@@ -489,5 +491,11 @@ body {
                 text-align: center;
             }
         }
-    }
+	}
+	
+	@media (max-width:500px){
+			
+		//.center();
+
+	}
 }
