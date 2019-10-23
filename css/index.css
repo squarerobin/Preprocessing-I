@@ -140,76 +140,61 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
-body {
+html {
   height: 100%;
   width: 100%;
-  font-size: 62.45%;
+  font-size: 40%;
 }
-html h1,
-body h1 {
+html h1 {
   font-size: 5em;
 }
-html h2,
-body h2 {
+html h2 {
   font-size: 4em;
 }
-html p,
-body p {
+html p {
   font-size: 3em;
 }
-html .container,
-body .container {
+html .container {
   width: 100%;
   background: black;
   color: #9cb2bc;
   padding: 10em;
 }
 html .container a,
-body .container a,
-html .container p,
-body .container p {
+html .container p {
   color: #9cb2bc;
 }
-html .container nav.top-nav,
-body .container nav.top-nav {
+html .container nav.top-nav {
   display: flex;
   justify-content: flex-end;
 }
-html .container nav.top-nav a,
-body .container nav.top-nav a {
+html .container nav.top-nav a {
   color: #9cb2bc;
   text-decoration: none;
   margin-right: 10em;
   width: 50px;
   height: 50px;
 }
-html .container nav.top-nav a:hover,
-body .container nav.top-nav a:hover {
+html .container nav.top-nav a:hover {
   border-bottom: 2px solid #f90;
 }
 @media (max-width: 500px) {
-  html .container nav.top-nav,
-  body .container nav.top-nav {
+  html .container nav.top-nav {
     font-size: 70%;
     justify-content: center;
   }
-  html .container nav.top-nav a,
-  body .container nav.top-nav a {
+  html .container nav.top-nav a {
     widows: 50px;
     height: 50px;
   }
 }
-html .container .featured,
-body .container .featured {
+html .container .featured {
   margin-bottom: 20em;
 }
-html .container .featured > *,
-body .container .featured > * {
+html .container .featured > * {
   padding: 1em 0;
 }
-html .container .featured img,
-body .container .featured img {
+html .container .featured img {
   margin-top: 5%;
   padding: 2%;
   width: 40%;
@@ -217,73 +202,60 @@ body .container .featured img {
   min-width: 300px;
   border-radius: 50%;
 }
-html .container .featured p,
-body .container .featured p {
+html .container .featured p {
   width: 50%;
 }
 @media (max-width: 500px) {
-  html .container .featured p,
-  body .container .featured p {
+  html .container .featured p {
     width: 100%;
   }
 }
-html .container .featured button,
-body .container .featured button {
+html .container .featured button {
   font-size: 1em;
   background: #f90;
   padding: 1em;
   height: 40%;
   /* border-radius: 20%; */
 }
-html .container .featured button p,
-body .container .featured button p {
+html .container .featured button p {
   width: 100%;
   color: black;
 }
-html .container .featured button:hover,
-body .container .featured button:hover {
+html .container .featured button:hover {
   background-color: #b36b00;
 }
-html .container .middle,
-body .container .middle {
+html .container .middle {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   margin-bottom: 10%;
   width: 100%;
 }
-html .container .middle .listen-up,
-body .container .middle .listen-up {
+html .container .middle .listen-up {
   flex: 1;
   width: 40%;
   margin-right: 20%;
 }
-html .container .middle .listen-up h1,
-body .container .middle .listen-up h1 {
+html .container .middle .listen-up h1 {
   padding-bottom: 1em;
 }
-html .container .middle .expertise,
-body .container .middle .expertise {
+html .container .middle .expertise {
   flex: 1;
   line-height: 7em;
   width: 50%;
 }
-html .container .middle .expertise h1,
-body .container .middle .expertise h1 {
+html .container .middle .expertise h1 {
   margin-bottom: 3%;
 }
-html .container .middle .expertise ul,
-body .container .middle .expertise ul {
+html .container .middle .expertise ul {
   list-style-type: circle;
 }
-html .container .middle .expertise ul li,
-body .container .middle .expertise ul li {
+html .container .middle .expertise ul li {
   padding-bottom: 0em;
   margin-bottom: 3em;
 }
 @media (max-width: 500px) {
-  html .container .middle,
-  body .container .middle {
+  html .container .middle {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -291,73 +263,57 @@ body .container .middle .expertise ul li {
     margin-bottom: 10%;
     width: 100%;
   }
-  html .container .middle .listen-up,
-  body .container .middle .listen-up {
+  html .container .middle .listen-up {
     width: 100%;
   }
-  html .container .middle .listen-up h1,
-  body .container .middle .listen-up h1 {
+  html .container .middle .listen-up h1 {
     padding-bottom: 2em;
   }
-  html .container .middle .expertise,
-  body .container .middle .expertise {
+  html .container .middle .expertise {
     width: 100%;
     margin-top: 20%;
   }
 }
-html .container .bottom,
-body .container .bottom {
+html .container .bottom {
   margin-bottom: 20%;
 }
-html .container .bottom h1,
-body .container .bottom h1 {
+html .container .bottom h1 {
   padding-bottom: 2em;
   margin-bottom: 2%;
 }
-html .container .bottom ul li,
-body .container .bottom ul li {
+html .container .bottom ul li {
   padding-bottom: 1em;
   margin-bottom: 3em;
 }
-html .container .form,
-body .container .form {
+html .container .form {
   margin-bottom: 10%;
   max-width: 600px;
   min-width: 300px;
   width: 50%;
 }
-html .container .form p,
-body .container .form p {
+html .container .form p {
   font-size: 2em;
 }
-html .container .form h1,
-body .container .form h1 {
+html .container .form h1 {
   margin-bottom: 10%;
 }
-html .container .form #form,
-body .container .form #form {
+html .container .form #form {
   margin: 0 0;
   height: 100%;
 }
-html .container .form form,
-body .container .form form {
+html .container .form form {
   margin: 0 auto;
   width: 30%;
   padding-top: 40px;
   color: #9cb2bc;
 }
 html .container .form label,
-body .container .form label,
 html .container .form input,
-body .container .form input,
-html .container .form textarea,
-body .container .form textarea {
+html .container .form textarea {
   display: block;
 }
 html .container .form input,
-body .container .form input,
-html .container .form textarea,
-body .container .form textarea {
+html .container .form textarea {
   width: 100%;
   border: none;
   border-radius: 20px;
@@ -376,19 +332,15 @@ body .container .form textarea {
   box-sizing: border-box;
 }
 html .container .form input:focus,
-body .container .form input:focus,
-html .container .form textarea:focus,
-body .container .form textarea:focus {
+html .container .form textarea:focus {
   border: solid 3px #77bde0;
 }
-html .container .form textarea,
-body .container .form textarea {
+html .container .form textarea {
   height: 100%;
   resize: none;
   overflow: auto;
 }
-html .container .form input[type="submit"],
-body .container .form input[type="submit"] {
+html .container .form input[type="submit"] {
   background-color: #f90;
   color: #9cb2bc;
   height: 50px;
@@ -401,22 +353,17 @@ body .container .form input[type="submit"] {
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
-html .container .form input[type="submit"]:hover,
-body .container .form input[type="submit"]:hover {
+html .container .form input[type="submit"]:hover {
   background-color: #b36b00;
 }
-html .container .form label,
-body .container .form label {
+html .container .form label {
   font-size: 1.5em;
   margin-top: 20px;
   padding-left: 2%;
 }
 html .container .form .formgroup,
-body .container .form .formgroup,
 html .container .form .formgroup-active,
-body .container .form .formgroup-active,
-html .container .form .formgroup-error,
-body .container .form .formgroup-error {
+html .container .form .formgroup-error {
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 20.5%;
@@ -427,41 +374,32 @@ body .container .form .formgroup-error {
   width: 300%;
   padding-top: 2px;
 }
-html .container .form .formgroup-error,
-body .container .form .formgroup-error {
+html .container .form .formgroup-error {
   color: red;
 }
-html .container .form input,
-body .container .form input {
+html .container .form input {
   font-size: 3em;
 }
 html .container .form input[value],
-body .container .form input[value],
-html .container .form input textarea,
-body .container .form input textarea {
+html .container .form input textarea {
   font-size: 3em;
 }
 @media (max-width: 500px) {
-  html .container div.form,
-  body .container div.form {
+  html .container div.form {
     width: 100%;
   }
-  html .container #waterform,
-  body .container #waterform {
+  html .container #waterform {
     margin: 0 10%;
   }
-  html .container input[type="submit"],
-  body .container input[type="submit"] {
+  html .container input[type="submit"] {
     margin: 0;
     width: 300%;
   }
 }
-html .container footer,
-body .container footer {
+html .container footer {
   color: #9cb2bc;
 }
-html .container footer p,
-body .container footer p {
+html .container footer p {
   text-align: center;
 }
 @media (max-width: 500px) {
