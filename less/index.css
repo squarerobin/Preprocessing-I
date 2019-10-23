@@ -133,8 +133,8 @@ table {
   flex-wrap: nowrap;
   justify-content: center;
 }
-.darken {
-  background-color: #b36b00;
+.lighten {
+  background-color: #e4a74c;
 }
 /* Set every element's box-sizing to border-box */
 * {
@@ -176,7 +176,7 @@ html .container nav.top-nav a {
   height: 50px;
 }
 html .container nav.top-nav a:hover {
-  border-bottom: 2px solid #f90;
+  border-bottom: 2px solid #c5821e;
 }
 @media (max-width: 500px) {
   html .container nav.top-nav {
@@ -212,7 +212,7 @@ html .container .featured p {
 }
 html .container .featured button {
   font-size: 1em;
-  background: #f90;
+  background: #c5821e;
   padding: 1em;
   height: 40%;
   /* border-radius: 20%; */
@@ -222,7 +222,7 @@ html .container .featured button p {
   color: black;
 }
 html .container .featured button:hover {
-  background-color: #b36b00;
+  background-color: #e4a74c;
 }
 html .container .middle {
   display: flex;
@@ -341,7 +341,7 @@ html .container .form textarea {
   overflow: auto;
 }
 html .container .form input[type="submit"] {
-  background-color: #f90;
+  background-color: #c5821e;
   color: #9cb2bc;
   height: 50px;
   cursor: pointer;
@@ -354,7 +354,7 @@ html .container .form input[type="submit"] {
   transition: background-color 0.5s;
 }
 html .container .form input[type="submit"]:hover {
-  background-color: #b36b00;
+  background-color: #e4a74c;
 }
 html .container .form label {
   font-size: 1.5em;

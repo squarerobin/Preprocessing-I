@@ -138,7 +138,7 @@ table {
 // colors
 @main_font: #9cb2bc;
 @background : black;
-@accent:#f90;
+@accent:rgb(197, 130, 30);
 
 /* mixins*/
 
@@ -150,8 +150,8 @@ table {
 
 }
 
-.darken{                
-	background-color: darken(@accent,15%);
+.lighten{                
+	background-color: lighten(@accent,15%);
 }
 /* Set every element's box-sizing to border-box */
 
@@ -261,7 +261,7 @@ html {
 			}
 			
 			button:hover{
-				.darken();
+				.lighten();
 			}
         }
 
@@ -430,7 +430,7 @@ html {
 
             input[type="submit"]:hover {
 			
-                .darken();
+                .lighten();
             }
 
             label {
