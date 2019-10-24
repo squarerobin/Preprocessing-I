@@ -180,7 +180,7 @@ html {
         width: 100%;
         background: @background;
         color: @main_font;
-        padding: 10em;
+        padding: 13em;
 
 	
        
@@ -191,40 +191,61 @@ html {
         nav.top-nav {
             display: flex;
 			justify-content: flex-end;
-			align-items: center;
-			
+            align-items: center;
+            
+            @media (max-width:500px){
+
+                
+                font-size: 80%;
+                justify-content: center;
+                  
+            }
+    
 
             a {
                 color: @main_font;
                 text-decoration: none;
-				width: 300px;
-				height: 50px;
+				margin-right: 3em;
+                height: 50px;
+                align-self: flex-end;
                 
-               
+                @media (max-width:500px){
+
+                    
+                    
+                        min-width: 30px;
+                        min-height: 50px;
+                    
+                }
+        
             }
             p:hover{
                 border-bottom: 2px solid @accent;
-                padding-bottom: 1em;
 
-            }
+				justify-content: center;
+				
+
+
+            	@media (max-width:50px){
+                  
+
+                    min-width: 50px;
+                    min-height: 50px;
+                    
+                }
+
+
+
+			
+			
+			
+
+		    }
 		}
 		
 			
 
-		@media (max-width:500px){
-
-			nav.top-nav{
-				font-size: 80%;
-				justify-content: center;
-				margin-left: -20%;
-				a{
-					width: 50px;
-					height: 50px;
-					padding: 50px
-				}
-			}
-
-		}
+	
         .featured {
            
             margin-bottom: 20em;
