@@ -209,14 +209,7 @@ html {
                 height: 50px;
                 align-self: flex-end;
                 
-                @media (max-width:500px){
-
-                    
-                    
-                        min-width: 30px;
-                        min-height: 50px;
-                    
-                }
+              
         
             }
             p:hover{
@@ -247,7 +240,8 @@ html {
 
 	
         .featured {
-           
+            display: flex;
+            flex-direction: column;
             margin-bottom: 20em;
 
             &>* {
@@ -276,11 +270,19 @@ html {
                 font-size: 1em;
                 background: @accent;
                 padding: 1em;
-				height: 40%;
+                height: 40%;
+                display: flex;
+                border-radius: 5%;
+                width: 40%;
+                height: 10rem;
+                max-width: 40rem;
+                min-width: 40rem;
 				
 				p{
 					width: 100%;
-					color: black;
+                    color: black;
+                    align-self: center;
+
 
 				}
 

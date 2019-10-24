@@ -182,12 +182,6 @@ html .container nav.top-nav a {
   height: 50px;
   align-self: flex-end;
 }
-@media (max-width: 500px) {
-  html .container nav.top-nav a {
-    min-width: 30px;
-    min-height: 50px;
-  }
-}
 html .container nav.top-nav p:hover {
   border-bottom: 2px solid #c5821e;
   justify-content: center;
@@ -199,6 +193,8 @@ html .container nav.top-nav p:hover {
   }
 }
 html .container .featured {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20em;
 }
 html .container .featured > * {
@@ -225,11 +221,18 @@ html .container .featured button {
   background: #c5821e;
   padding: 1em;
   height: 40%;
+  display: flex;
+  border-radius: 5%;
+  width: 40%;
+  height: 10rem;
+  max-width: 40rem;
+  min-width: 40rem;
   /* border-radius: 20%; */
 }
 html .container .featured button p {
   width: 100%;
   color: black;
+  align-self: center;
 }
 html .container .featured button:hover {
   background-color: #e4a74c;
