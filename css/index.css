@@ -203,7 +203,7 @@ html .container .featured > * {
 html .container .featured img {
   margin-top: 5%;
   padding: 2%;
-  width: 40%;
+  width: 42%;
   max-width: 300px;
   min-width: 300px;
   border-radius: 50%;
@@ -312,7 +312,7 @@ html .container .form p {
   font-size: 2em;
 }
 html .container .form h1 {
-  margin-bottom: 10%;
+  margin-bottom: 3%;
 }
 html .container .form #form {
   margin: 0 0;
