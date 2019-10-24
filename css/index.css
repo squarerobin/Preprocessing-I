@@ -143,7 +143,6 @@ table {
 html {
   height: 100%;
   width: 100%;
-  /* font-size: 62.45%; */
   font-size: 40%;
   font-family: 'Baloo Bhai', cursive;
 }
@@ -167,27 +166,24 @@ html .container p {
 }
 html .container nav.top-nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  /*   &.hover{
-                border-bottom: 2px solid @accent;
-
-            } */
 }
 html .container nav.top-nav a {
   color: #9cb2bc;
   text-decoration: none;
-  padding-right: 16rem;
-  width: 50px;
+  width: 300px;
   height: 50px;
 }
-html .container nav.top-nav a p:hover {
+html .container nav.top-nav p:hover {
   border-bottom: 2px solid #c5821e;
+  padding-bottom: 1em;
 }
 @media (max-width: 500px) {
   html .container nav.top-nav {
     font-size: 80%;
     justify-content: center;
+    margin-left: -20%;
   }
   html .container nav.top-nav a {
     width: 50px;
